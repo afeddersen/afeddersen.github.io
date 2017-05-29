@@ -1,11 +1,17 @@
 <html>
-    <title>afeddersen.github.io</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Josefin+Sans"
-        rel="stylesheet">
+    <head>
+        <meta charset="utf-8"/>
+        <title>afeddersen.github.io</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Josefin+Sans"
+            rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
+    </head>
     <style>
         h1 {
             font-family: 'Josefin Sans', sans-serif;
@@ -22,6 +28,10 @@
 
         li {
             text-align: left;
+        }
+
+        .intro {
+            text-align: center;
         }
 
         p {
@@ -74,6 +84,131 @@
             font-size: 12px;
             width: 700px;
         }
+
+        /* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript */
+        /**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            color: #f8f8f2;
+            background: none;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 11px;
+            text-align: left;
+            white-space: pre;
+            word-spacing: normal;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 1.5;
+
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+
+            -webkit-hyphens: none;
+            -moz-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+        }
+
+        /* Code blocks */
+        pre[class*="language-"] {
+            padding: 1em;
+            margin: 0.5em 0;
+            overflow: auto;
+            border-radius: 0.3em;
+        }
+
+        :not(pre) > code[class*="language-"],
+        pre[class*="language-"] {
+            background: #272822;
+        }
+
+        /* Inline code */
+        :not(pre) > code[class*="language-"] {
+            padding: 0.1em;
+            border-radius: 0.3em;
+            white-space: normal;
+        }
+
+        .token.cdata,
+        .token.comment,
+        .token.doctype,
+        .token.prolog {
+            color: slategray;
+        }
+
+        .token.punctuation {
+            color: #f8f8f2;
+        }
+
+        .namespace {
+            opacity: 0.7;
+        }
+
+        .token.constant,
+        .token.deleted,
+        .token.property,
+        .token.symbol,
+        .token.tag {
+            color: #f92672;
+        }
+
+        .token.boolean,
+        .token.number {
+            color: #ae81ff;
+        }
+
+        .token.attr-name,
+        .token.builtin,
+        .token.char,
+        .token.inserted,
+        .token.selector,
+        .token.string {
+            color: #a6e22e;
+        }
+
+        .language-css .token.string,
+        .style .token.string,
+        .token.entity,
+        .token.operator,
+        .token.url,
+        .token.variable {
+            color: #f8f8f2;
+        }
+
+        .token.atrule,
+        .token.attr-value,
+        .token.function {
+            color: #e6db74;
+        }
+
+        .token.keyword {
+            color: #66d9ef;
+        }
+
+        .token.important,
+        .token.regex {
+            color: #fd971f;
+        }
+
+        .token.bold,
+        .token.important {
+            font-weight: bold;
+        }
+        .token.italic {
+            font-style: italic;
+        }
+
+        .token.entity {
+            cursor: help;
+        }
+        DOWNLOAD CSS
     </style>
 
     <body>
@@ -85,6 +220,11 @@
                 style="max-width:500px"
                 id="band">
                 <h2 class="w3-wide">afeddersen.github.io</h2>
+                <p class="intro">
+                    <pre><code class="language-python">
+                    coding = hobby
+                    </code></pre>
+                </p>
                 <p class="w3-justify">
                     hobby repos
                 </p>
@@ -92,7 +232,7 @@
             </div>
 
         </div>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
     </body>
 
 </html>
