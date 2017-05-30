@@ -1,0 +1,18 @@
+L1,L2,L3,L4,L5,GENE_NAME
+Enzyme,Kinase,Protein Kinase,Ser_Thr,Cmgc,MAPK11
+Enzyme,Kinase,Protein Kinase,Tyr,Tk,ABL1
+Enzyme,Kinase,Protein Kinase,Tyr,Tk,PDGFRB
+Enzyme,Kinase,Protein Kinase,Tyr,Tk,PDGFRA
+Enzyme,Kinase,Protein Kinase,Ser_Thr,Tkl,ALK
+Enzyme,Isomerase,Isomerase Other,,,gyrB
+Enzyme,Oxidoreductase,Oxidoreductase Other,,,ALOX5
+Enzyme,Oxidoreductase,Oxidoreductase Other,,,IMPDH1
+Enzyme,Transferase,Transferase Other,,,COMT
+Enzyme,Oxidoreductase,Oxidoreductase Other,,,RRM1
+Enzyme,Oxidoreductase,Oxidoreductase Other,,,PTGS2
+Enzyme,Lyase,Lyase Other,,,POLB
+Enzyme,Lyase,Lyase Other,,,CA5B
+Enzyme,Hydrolase,Hydrolase Other,,,GAA
+Enzyme,Protease,Metallo,MAM,M10A,MMP8
+Enzyme,Lyase,Lyase Other,,,CA5A
+Enzyme,Lyase,Lyase Other,,,CA7

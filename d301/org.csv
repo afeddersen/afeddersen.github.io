@@ -1,21 +1,54 @@
-Machine,Name,URL Template,Page Start,Page Size,Max Pages,xPath,RegEx,eCommerce,Search Interval,Additional Variable,Variable Value
-"Machine [1]","eSearch - Web-GB","http://example.com/status","1","1","10","//somethingness","([0-9]{1,20})","1","0","Thum","true"
-"Machine [1]","eSearch - Web-GB","http://forexample.com/randomness","1","1","10","//nothingness","([0-9]{1,20})","1","0","Kapool","true"
-"Machine [1]","Web: Web-US","http://mangasite.com/mangacomic","1","1","10","//itemId","([0-9]{1,20})","1","0","Crawl Natural URL","true"
-"Machine [1]","Web: Web-US","http://someothersite.fr/kapala","1","1","10","//itemId","([0-9]{1,20})","1","0","Block Sellers","true"
-"Machine [1]","Link Test","http://kistergans.com/papals","0","1","1","//a/@href","(.*)","0","0",,
-"Machine [1]","TW Search","https://mankini.jp/ofcourse","0","100","1","//a/@href","(.*/status/.*)","0","0",,
-"Machine [1]","TW API","http://storagewars.com","0","1","1","//a/@href","(http.*)","0","0",,
-"Machine [1]","Amiz Metaquery","http://www.Amiz.com/s/","1","10","1","//a[contains]/@href","(http://www\.Amiz\.com/","0","0",,
-"Machine [1]","Amiz Metaquery Too","http://www.Amiz.de/s/?field-keywords=%q&page=%i","1","1","10","//div/@href","http://www.Amiz.de/).*","0","0",,
-"Machine [2]","Subs.com","https://www.subs.com/search?f=%q&p=%i","0","1","10","//dt/a/@href","((https?://[^/]+)?/[^/\+]{10,500})","0","0",,
-"Machine [2]","Extra.cc","http://extra.cc/search/","1","1","10","//a/@href","([^#]+)","0","0",,
-"Machine [2]","Monitoring","http://monitoring.com/nothing","1","1","1","//nothing","(.*)","0","0",,
-"Machine [2]","SM - abe.com - users","http://s.weibo.com/user/lamborghini","1","1","1","//div[@class=""person_detail""]/p[@class=""person_addr""]/a/@href","(.*)","0","0",,
-"Machine [2]","SM - koko.com","http://i.youku.com/u_search/?page=%i&q=%q","1","1","10","//li[@class=""u_title""]/a/@href","(http://i.youku.com/u/.+)","0","0",,
-"Machine [2]","Amiz.com Page","http://www.Amiz.com/s/?field-keywords=%q&page=%i","1","1","5","//div[@id=""rightResultsATF""]//@href","/dp/([^/]+)/.*","1","0",,
-"Machine [3]","MA: Apple.com (iTunes)","http://software.com/aabc","0","200","1","//iTunesApp/trackViewUrl","(@keli)","1","0",,
-"Machine [3]","MA: Wipple.com","http://kalamaza.ck/keywords","0","48","5","//a/@href","(http://abc.ck)","0","0",,
-"Machine [3]","SM: Linkage.com ","http://stormborn.com/lalala","0","100","5","//a/@href","(lililo+)","0","0",,
-"Machine [3]","SM: Afro.com - via SearchTool","http://lipidi.li/lili","0","1","1","//a/@href","(.*/status/[0-9]+)","0","0",,
-"Machine [3]","SM: Afro.com","http://sazdarma.ka/yoyo","0","1","1","//a/@href","(.*/status/[0-9]+)","0","0",,
+name,parent
+Chandra Prasad,
+Zain Rizvi,Dinesh Chahlia
+Nicole Desrosiers,Dinesh Chahlia
+Greg Teather,Anthony Feddersen
+Jeremy Edwards,Rajesh Mishra
+Yingxin Jiang,Rajesh Mishra
+Bonan Liu,Anthony Feddersen
+Sanjna Venkataraman,Dinesh Chahlia
+Theodora Yeung,Rajesh Mishra
+Stefan Mellem,Rajesh Mishra
+Haney Maxwell,Abuna Demoz
+Dinesh Chahlia,Chandra Prasad
+Parya Moinzadeh,Amit Mondal
+Prashant Jayaraman,Anthony Feddersen
+Emilbek Joldoshev,Dinesh Chahlia
+Osmar Coronel,Karen Aleksanyan
+Hamid Zia,Abuna Demoz
+Sefa Kilic,Abuna Demoz
+Jarek Kowalski,Chandra Prasad
+Dan Radion,Abuna Demoz
+Lin Guo,Dinesh Chahlia
+Eunsoo Seo,Rajesh Mishra
+Anthony Feddersen,Chandra Prasad
+Gabriel Kliot,Amit Mondal
+Bilal Munir Mughal,Rajesh Mishra
+Dustin Green,Chandra Prasad
+Qingyu Meng,Abuna Demoz
+Josh McAdams,Anthony Feddersen
+Ross Bagley,Dinesh Chahlia
+Xintian Yang,Abuna Demoz
+Greg Altman,Amit Mondal
+João Porto,Amit Mondal
+Ram chandra Sankhala,Rajesh Mishra
+Ozan Demir,Amit Mondal
+Denis Seniuc,Dinesh Chahlia
+Jinseong Jeon,Rajesh Mishra
+Vibhooti Verma,Rajesh Mishra
+Artem Grachev,Anthony Feddersen
+Austin Tsao,Daniel Broudy
+Abuna Demoz,Chandra Prasad
+Yuly Suvorov,Dinesh Chahlia
+Karen Aleksanyan,Rajesh Mishra
+Luis Daniel Ballesteros,Anthony Feddersen
+Helton Duarte,Abuna Demoz
+Saiful Islam,Rajesh Mishra
+Amit Mondal,Chandra Prasad
+Daniel Broudy,Abuna Demoz
+Gaoyuan Chen,Abuna Demoz
+Dustin Carlino,Anthony Feddersen
+Daniel Burrows,Anthony Feddersen
+Xinhang Shao,Amit Mondal
+Herbert Duarte,Rajesh Mishra
+Rajesh Mishra,Chandra Prasad
