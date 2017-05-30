@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+
+    .node {
+      cursor: pointer;
+    }
+
+    .node circle {
+      fill: #fff;
+      stroke: steelblue;
+      stroke-width: 1.5px;
+    }
+
+    .node text {
+      font: 10px sans-serif;
+    }
+
+    .link {
+      fill: none;
+      stroke: #ccc;
+      stroke-width: 1.5px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <script src = "http://d3js.org/d3.v3.min.js" ></script>
+
+  <script>
+    var margin = {
+      top: 20,
+      right: 120,
+      bottom: 20,
+      left: 120
+    },
+      width = 800 - margin.right - margin.left,
+      height = 1000 - margin.top - margin.bottom;
+
+    var canvas = d3.select("body").append("svg")
+      .attr("width", 2000)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var tree = d3.layout.tree()
+      .size([height, width])
+      .children(function(d){
+          return d.values;
+        });
+
+    var diagonal = d3.svg.diagonal()
+      .projection(function(d) {
+        return [d.y, d.x];
+      });
+
+    d3.csv("org.csv", function(data) {
+
+      var nested_data = d3.nest()
+        .key(function(d) {
+          return d['Machine'];
+        })
+        .key(function(d) {
+          return d['Name'];
+        })
+        .rollup(function(d){
+          var children = [];
+          d.forEach(function(dSub){
+            for (var k in dSub){
+        			if (k == 'URL Template' || k == 'xPath')
+        				children.push({'key': dSub[k]})
+              }
+          })
+          return children;
+        })
+        .entries(data);
+
+      console.log(nested_data)
+
+      flare_data = {};
+      flare_data.key = "Flare";
+      flare_data.values = nested_data;
+      //flare_data = reSortFlare(flare_data); //Turns Key Values into Name Children which D3 Tree expects
+
+      console.log(flare_data)
+
+      var nodes = tree.nodes(flare_data);
+
+      var link = canvas.selectAll(".link")
+        .data(tree.links(nodes))
+        .enter().append("path")
+        .attr("class", "link")
+        .attr("d", diagonal);
+
+      var node = canvas.selectAll(".node")
+        .data(nodes)
+        .enter()
+        .append("g")
+        .attr("class", "node")
+        .attr("transform", function(d) {
+          return "translate(" + d.y + "," + d.x + ")";
+        });
+
+      node.append("circle")
+        .attr("r", 7);
+
+      node.append("text")
+        .attr("dx", function(d) {
+          return d.children ? -15 : 15;
+        })
+        .attr("dy", 3)
+        .style("text-anchor", function(d) {
+          return d.children ? "end" : "start";
+        })
+        .text(function(d) {
+          return d.children ? d.key : d.key;
+        });
+    });
+
+  </script>
+</body>
+
+</html>
