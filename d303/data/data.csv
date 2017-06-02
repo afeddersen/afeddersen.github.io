@@ -1,0 +1,703 @@
+occupation,code,probability
+Recreational Therapists,29,0.0028
+First-Line Supervisors of Mechanics, Installers, and Repairers,49,0.003
+Emergency Management Directors,11,0.003
+Mental Health and Substance Abuse Social Workers,21,0.0031
+Audiologists,29,0.0033
+Occupational Therapists,29,0.0035
+Orthotists and Prosthetists,29,0.0035
+Healthcare Social Workers,21,0.0035
+Oral and Maxillofacial Surgeons,29,0.0036
+First-Line Supervisors of Fire Fighting and Prevention Workers,33,0.0036
+Dietitians and Nutritionists,29,0.0039
+Lodging Managers,11,0.0039
+Choreographers,27,0.004
+Sales Engineers,41,0.0041
+Physicians and Surgeons,02,0.0042
+Instructional Coordinators,25,0.0042
+Psychologists, All Other,19,0.0043
+First-Line Supervisors of Police and Detectives,33,0.0044
+Dentists, General,02,0.0044
+Elementary School Teachers, Except Special Education,25,0.0044
+Medical Scientists, Except Epidemiologists,19,0.0045
+Education Administrators, Elementary and Secondary School,11,0.0046
+Podiatrists,29,0.0046
+Clinical, Counseling, and School Psychologists,19,0.0047
+Mental Health Counselors,21,0.0048
+Fabric and Apparel Patternmakers,51,0.0049
+Set and Exhibit Designers,27,0.0055
+Human Resources Managers,11,0.0055
+Recreation Workers,39,0.0061
+Training and Development Managers,11,0.0063
+Speech-Language Pathologists,29,0.0064
+Computer Systems Analysts,15,0.0065
+Social and Community Service Managers,11,0.0067
+Curators,25,0.0068
+Athletic Trainers,29,0.0071
+Medical and Health Services Managers,11,0.0073
+Preschool Teachers, Except Special Education,25,0.0074
+Farm and Home Management Advisors,25,0.0075
+Anthropologists and Archeologists,19,0.0077
+Special Education Teachers, Secondary School,25,0.0077
+Secondary School Teachers, Except Special and Career/Technical Education,25,0.0078
+Clergy,21,0.0081
+Foresters,19,0.0081
+Educational, Guidance, School, and Vocational Counselors,21,0.0085
+Career/Technical Education Teachers, Secondary School,25,0.0088
+Registered Nurses,29,0.009
+Rehabilitation Counselors,21,0.0094
+Teachers and Instructors, All Other,25,0.0095
+Forensic Science Technicians,19,0.0095
+Makeup Artists, Theatrical and Performance,39,0.01
+Marine Engineers and Naval Architects,17,0.01
+Education Administrators, Postsecondary,11,0.01
+Mechanical Engineers,17,0.011
+Pharmacists,29,0.012
+Logisticians,13,0.012
+Microbiologists,19,0.012
+Industrial-Organizational Psychologists,19,0.012
+Coaches and Scouts,27,0.013
+Sales Managers,11,0.013
+Hydrologists,19,0.014
+Marketing Managers,11,0.014
+Marriage and Family Therapists,21,0.014
+Engineers, All Other,17,0.014
+Training and Development Specialists,13,0.014
+First-Line Supervisors of Office and Administrative Support Workers,43,0.014
+Music Directors and Composers,27,0.015
+Public Relations and Fundraising Managers,11,0.015
+Education Administrators, Preschool and Childcare Center/Program,11,0.015
+Chief Executives,11,0.015
+Multimedia Artists and Animators,27,0.015
+Biological Scientists, All Other,19,0.015
+Computer and Information Research Scientists,15,0.015
+First-Line Supervisors of Production and Operating Workers,51,0.016
+Securities, Commodities, and Financial Services Sales Agents,41,0.016
+Conservation Scientists,19,0.016
+Special Education Teachers, Middle School,25,0.016
+Aerospace Engineers,17,0.017
+Architectural and Engineering Managers,11,0.017
+Chemical Engineers,17,0.017
+Natural Sciences Managers,11,0.018
+Environmental Engineers,17,0.018
+Architects, Except Landscape and Naval,17,0.018
+Physical Therapist Assistants,31,0.018
+Civil Engineers,17,0.019
+Health Diagnosing and Treating Practitioners, All Other,29,0.02
+Fashion Designers,27,0.021
+Photographers,27,0.021
+Physical Therapists,29,0.021
+Materials Engineers,17,0.021
+Soil and Plant Scientists,19,0.021
+Materials Scientists,19,0.021
+Producers and Directors,27,0.022
+Interior Designers,27,0.022
+Orthodontists,29,0.023
+Art Directors,27,0.023
+First-Line Supervisors of Correctional Officers,33,0.025
+Directors, Religious Activities and Education,21,0.025
+Electronics Engineers, Except Computer,17,0.025
+Biochemists and Biophysicists,19,0.027
+Chiropractors,29,0.027
+Health and Safety Engineers, Except Mining Safety Engineers and Inspectors,17,0.028
+Child, Family, and School Social Workers,21,0.028
+Occupational Therapy Assistants,31,0.028
+Industrial Engineers,17,0.029
+First-Line Supervisors of Transportation and Material-Moving Machine and Vehicle Operators,53,0.029
+Veterinary Technologists and Technicians,29,0.029
+Industrial Production Managers,11,0.03
+Industrial Engineering Technicians,17,0.03
+Network and Computer Systems Administrators,15,0.03
+Database Administrators,15,0.03
+Purchasing Managers,11,0.03
+Postsecondary Teachers,25,0.032
+Substance Abuse and Behavioral Disorder Counselors,21,0.033
+Environmental Scientists and Specialists, Including Health,19,0.033
+Lawyers,23,0.035
+Craft Artists,27,0.035
+Operations Research Analysts,15,0.035
+Computer and Information Systems Managers,11,0.035
+Commercial and Industrial Designers,27,0.037
+Biomedical Engineers,17,0.037
+Meeting, Convention, and Event Planners,13,0.037
+Writers and Authors,27,0.038
+Veterinarians,29,0.038
+Advertising and Promotions Managers,11,0.039
+Political Scientists,19,0.039
+Credit Counselors,13,0.04
+Social Scientists and Related Workers, All Other,19,0.04
+Astronomers,19,0.041
+Ship Engineers,53,0.041
+Software Developers, Applications,15,0.042
+Fine Artists, Including Painters, Sculptors, and Illustrators,27,0.042
+Psychiatric Technicians,29,0.043
+Landscape Architects,17,0.045
+Health Educators,21,0.045
+Mathematicians,15,0.047
+Farmers, Ranchers, and Other Agricultural Managers,11,0.047
+Floral Designers,27,0.047
+Forest Fire Inspectors and Prevention Specialists,33,0.048
+Emergency Medical Technicians and Paramedics,29,0.049
+Editors,27,0.055
+Prosthodontists,29,0.055
+Healthcare Practitioners and Technical Workers, All Other,29,0.055
+Travel Guides,39,0.057
+Licensed Practical and Licensed Vocational Nurses,29,0.058
+Sociologists,19,0.059
+Arbitrators, Mediators, and Conciliators,23,0.06
+Animal Scientists,19,0.061
+Residential Advisors,39,0.064
+Aircraft Cargo Handling Supervisors,53,0.066
+Respiratory Therapists,29,0.066
+Broadcast News Analysts,27,0.067
+Financial Managers,11,0.069
+Nuclear Engineers,17,0.07
+Construction Managers,11,0.071
+Musicians and Singers,27,0.074
+First-Line Supervisors of Non-Retail Sales Workers,41,0.075
+First-Line Supervisors of Personal Service Workers,39,0.076
+Food Scientists and Technologists,19,0.077
+Compliance Officers,13,0.08
+Fish and Game Wardens,33,0.08
+Graphic Designers,27,0.082
+Food Service Managers,11,0.083
+Childcare Workers,39,0.084
+Fitness Trainers and Aerobics Instructors,39,0.085
+Gaming Managers,11,0.091
+Electrical Power-Line Installers and Repairers,49,0.097
+Police and Sheriff’s Patrol Officers,33,0.098
+Travel Agents,41,0.099
+Chefs and Head Cooks,35,0.1
+Animal Trainers,39,0.1
+Radio and Television Announcers,27,0.1
+Electrical Engineers,17,0.1
+Chemists,19,0.1
+Respiratory Therapy Technicians,29,0.1
+Physicists,19,0.1
+Reporters and Correspondents,27,0.11
+Air Traffic Controllers,53,0.11
+Hairdressers, Hairstylists, and Cosmetologists,39,0.11
+Dancers,27,0.13
+Nuclear Medicine Technologists,29,0.13
+Software Developers, Systems Software,15,0.13
+Management Analysts,13,0.13
+Dietetic Technicians,29,0.13
+Urban and Regional Planners,19,0.13
+Social and Human Service Assistants,21,0.13
+Self-Enrichment Education Teachers,25,0.13
+Sound Engineering Technicians,27,0.13
+Physician Assistants,29,0.14
+Mining and Geological Engineers, Including Mining Safety Engineers,17,0.14
+Optometrists,29,0.14
+Kindergarten Teachers, Except Special Education,25,0.15
+Electricians,47,0.15
+Petroleum Engineers,17,0.16
+Desktop Publishers,43,0.16
+General and Operations Managers,11,0.16
+Occupational Health and Safety Specialists,29,0.17
+Firefighters,33,0.17
+Financial Examiners,13,0.17
+First-Line Supervisors of Construction Trades and Extraction Workers,47,0.17
+Middle School Teachers, Except Special and Career/Technical Education,25,0.17
+Commercial Divers,49,0.18
+Airline Pilots, Copilots, and Flight Engineers,53,0.18
+Manufactured Building and Mobile Home Installers,49,0.18
+Public Relations Specialists,27,0.18
+Adult Basic and Secondary Education and Literacy Teachers and Instructors,25,0.19
+Epidemiologists,19,0.2
+Funeral Service Managers, Directors, Morticians, and Undertakers,39,0.2
+Information Security Analysts, Web Developers, and Computer Network Architects,15,0.21
+Actuaries,15,0.21
+Animal Control Workers,33,0.21
+Concierges,39,0.21
+Statisticians,15,0.22
+Computer Hardware Engineers,17,0.22
+Computer Occupations, All Other,15,0.22
+Survey Researchers,19,0.23
+Business Operations Specialists, All Other,13,0.23
+Financial Analysts,13,0.23
+Radiologic Technologists and Technicians,29,0.23
+Cardiovascular Technologists and Technicians,29,0.23
+Agents and Business Managers of Artists, Performers, and Athletes,13,0.24
+Engineering Technicians, Except Drafters, All Other,17,0.24
+Managers, All Other,11,0.25
+Ambulance Drivers and Attendants, Except Emergency Medical Technicians,53,0.25
+Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products,41,0.25
+Occupational Health and Safety Technicians,29,0.25
+Probation Officers and Correctional Treatment Specialists,21,0.25
+Environmental Engineering Technicians,17,0.25
+Geographers,19,0.25
+Career/Technical Education Teachers, Middle School,25,0.26
+Captains, Mates, and Pilots of Water Vessels,53,0.27
+Occupational Therapy Aides,31,0.27
+Medical Equipment Repairers,49,0.27
+First-Line Supervisors of Retail Sales Workers,41,0.28
+Athletes and Sports Competitors,27,0.28
+Gaming Supervisors,39,0.28
+Skincare Specialists,39,0.29
+Wholesale and Retail Buyers, Except Farm Products,13,0.29
+Biological Technicians,19,0.3
+Cooks, Private Household,35,0.3
+Zoologists and Wildlife Biologists,19,0.3
+Medical Assistants,31,0.3
+Human Resources, Training, and Labor Relations Specialists, All Other,13,0.31
+Private Detectives and Investigators,33,0.31
+Film and Video Editors,27,0.31
+Financial Specialists, All Other,13,0.33
+Radiation Therapists,29,0.34
+Surgical Technologists,29,0.34
+Detectives and Criminal Investigators,33,0.34
+Plumbers, Pipefitters, and Steamfitters,47,0.35
+Flight Attendants,53,0.35
+Diagnostic Medical Sonographers,29,0.35
+Bailiffs,33,0.36
+Computer Numerically Controlled Machine Tool Programmers, Metal and Plastic,51,0.36
+Telecommunications Equipment Installers and Repairers, Except Line Installers,49,0.36
+Helpers–Extraction Workers,47,0.37
+Mine Shuttle Car Operators,53,0.37
+Actors,27,0.37
+Funeral Attendants,39,0.37
+Cleaners of Vehicles and Equipment,53,0.37
+Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders,51,0.37
+layElectrical and Electronics Repairers, Powerhouse, Substation, and Re-,49,0.38
+Surveyors,17,0.38
+Mechanical Engineering Technicians,17,0.38
+Packers and Packagers, Hand,53,0.38
+Interpreters and Translators,27,0.38
+Home Health Aides,31,0.39
+Audio-Visual and Multimedia Collections Specialists,25,0.39
+Gaming Cage Workers,43,0.39
+Upholsterers,51,0.39
+Elevator Installers and Repairers,47,0.39
+Mobile Heavy Equipment Mechanics, Except Engines,49,0.4
+Health Technologists and Technicians, All Other,29,0.4
+Judges, Magistrate Judges, and Magistrates,23,0.4
+Graders and Sorters, Agricultural Products,45,0.41
+Structural Metal Fabricators and Fitters,51,0.41
+Judicial Law Clerks,23,0.41
+Electrical and Electronics Repairers, Commercial and Industrial Equipment,49,0.41
+Forest and Conservation Technicians,19,0.42
+First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand,53,0.42
+Physical Scientists, All Other,19,0.43
+Economists,19,0.43
+Locker Room, Coatroom, and Dressing Room Attendants,39,0.43
+Historians,19,0.44
+Medical Appliance Technicians,51,0.45
+Court, Municipal, and License Clerks,43,0.46
+Compensation, Benefits, and Job Analysis Specialists,13,0.47
+Psychiatric Aides,31,0.47
+Medical and Clinical Laboratory Technicians,29,0.47
+Aerospace Engineering and Operations Technicians,17,0.48
+Computer Programmers,15,0.48
+Explosives Workers, Ordnance Handling Experts, and Blasters,47,0.48
+Fire Inspectors and Investigators,33,0.48
+Merchandise Displayers and Window Trimmers,27,0.48
+Crossing Guards,33,0.49
+Agricultural Engineers,17,0.49
+Roof Bolters, Mining,47,0.49
+Telecommunications Line Installers and Repairers,49,0.49
+Police, Fire, and Ambulance Dispatchers,43,0.49
+Court Reporters,23,0.5
+Installation, Maintenance, and Repair Workers, All Other,49,0.5
+Loading Machine Operators, Underground Mining,53,0.5
+Demonstrators and Product Promoters,41,0.51
+Dental Assistants,31,0.51
+Shoe and Leather Workers and Repairers,51,0.52
+Architectural and Civil Drafters,17,0.52
+Rotary Drill Operators, Oil and Gas,47,0.53
+Hazardous Materials Removal Workers,47,0.53
+Advertising Sales Agents,41,0.54
+Massage Therapists,31,0.54
+Continuous Mining Machine Operators,47,0.54
+Slot Supervisors,39,0.54
+Embalmers,39,0.54
+Automotive Glass Installers and Repairers,49,0.55
+Commercial Pilots,53,0.55
+Customer Service Representatives,43,0.55
+Audio and Video Equipment Technicians,27,0.55
+Teacher Assistants,25,0.56
+Transit and Railroad Police,33,0.57
+First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers,37,0.57
+Cost Estimators,13,0.57
+Helpers–Pipelayers, Plumbers, Pipefitters, and Steamfitters,47,0.57
+Chemical Technicians,19,0.57
+First-Line Supervisors of Farming, Fishing, and Forestry Workers,45,0.57
+Personal Financial Advisors,13,0.58
+Millwrights,49,0.59
+Museum Technicians and Conservators,25,0.59
+Mine Cutting and Channeling Machine Operators,47,0.59
+Transportation, Storage, and Distribution Managers,11,0.59
+Recreational Vehicle Service Technicians,49,0.59
+Automotive Service Technicians and Mechanics,49,0.59
+Slaughterers and Meat Packers,51,0.6
+Camera Operators, Television, Video, and Motion Picture,27,0.6
+Correctional Officers and Jailers,33,0.6
+Electronic Equipment Installers and Repairers, Motor Vehicles,49,0.61
+Physical Therapist Aides,31,0.61
+Costume Attendants,39,0.61
+Market Research Analysts and Marketing Specialists,13,0.61
+Reservation and Transportation Ticket Agents and Travel Clerks,43,0.61
+Water and Wastewater Treatment Plant and System Operators,51,0.61
+Life, Physical, and Social Science Technicians, All Other,19,0.61
+Food Cooking Machine Operators and Tenders,51,0.61
+Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders,51,0.61
+Motorboat Operators,53,0.62
+Pipelayers,47,0.62
+Tapers,47,0.62
+Geoscientists, Except Hydrologists and Geographers,19,0.63
+Control and Valve Installers and Repairers, Except Mechanical Door,49,0.63
+Healthcare Support Workers, All Other,31,0.63
+First-Line Supervisors of Food Preparation and Serving Workers,35,0.63
+Construction and Building Inspectors,47,0.63
+Insulation Workers, Mechanical,47,0.64
+Maintenance and Repair Workers, General,49,0.64
+Power Distributors and Dispatchers,51,0.64
+Administrative Law Judges, Adjudicators, and Hearing Officers,23,0.64
+Stock Clerks and Order Fillers,43,0.64
+Cutters and Trimmers, Hand,51,0.64
+Social Science Research Assistants,19,0.65
+Machinists,51,0.65
+Computer Support Specialists,15,0.65
+Librarians,25,0.65
+Electronic Home Entertainment Equipment Installers and Repairers,49,0.65
+Heating, Air Conditioning, and Refrigeration Mechanics and Installers,49,0.65
+Hoist and Winch Operators,53,0.65
+Janitors and Cleaners, Except Maids and Housekeeping Cleaners,37,0.66
+Motorboat Mechanics and Service Technicians,49,0.66
+Statistical Assistants,43,0.66
+Helpers–Production Workers,51,0.66
+Pest Control Workers,37,0.66
+Paper Goods Machine Setters, Operators, and Tenders,51,0.67
+Foundry Mold and Coremakers,51,0.67
+Atmospheric and Space Scientists,19,0.67
+Bus Drivers, Transit and Intercity,53,0.67
+Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers,33,0.67
+Industrial Machinery Mechanics,49,0.67
+Roustabouts, Oil and Gas,47,0.68
+Dental Hygienists,29,0.68
+Mechanical Drafters,17,0.68
+Boilermakers,47,0.68
+Postal Service Mail Carriers,43,0.68
+Light Truck or Delivery Services Drivers,53,0.69
+Maids and Housekeeping Cleaners,37,0.69
+Painters, Transportation Equipment,51,0.69
+Eligibility Interviewers, Government Programs,43,0.7
+Tire Repairers and Changers,49,0.7
+Food Batchmakers,51,0.7
+Avionics Technicians,49,0.7
+Aircraft Mechanics and Service Technicians,49,0.71
+Airfield Operations Specialists,53,0.71
+Petroleum Pump System Operators, Refinery Operators, and Gaugers,51,0.71
+Construction and Related Workers, All Other,47,0.71
+Opticians, Dispensing,29,0.71
+Laundry and Dry-Cleaning Workers,51,0.71
+Home Appliance Repairers,49,0.72
+Public Address System and Other Announcers,27,0.72
+Carpenters,47,0.72
+Helpers–Roofers,47,0.72
+Pharmacy Aides,31,0.72
+Amusement and Recreation Attendants,39,0.72
+Tank Car, Truck, and Ship Loaders,53,0.72
+Textile Knitting and Weaving Machine Setters, Operators, and Tenders,51,0.73
+Administrative Services Managers,11,0.73
+Glaziers,47,0.73
+Coil Winders, Tapers, and Finishers,51,0.73
+Bus and Truck Mechanics and Diesel Engine Specialists,49,0.73
+Personal Care Aides,39,0.74
+Helpers–Electricians,47,0.74
+Broadcast Technicians,27,0.74
+Computer, Automated Teller, and Office Machine Repairers,49,0.74
+Postmasters and Mail Superintendents,11,0.75
+Tile and Marble Setters,47,0.75
+Painters, Construction and Maintenance,47,0.75
+Transportation Attendants, Except Flight Attendants,53,0.75
+Civil Engineering Technicians,17,0.75
+Farm Equipment Mechanics and Service Technicians,49,0.75
+Fallers,45,0.76
+Electric Motor, Power Tool, and Related Repairers,49,0.76
+Archivists,25,0.76
+Chemical Equipment Operators and Tenders,51,0.76
+Environmental Science and Protection Technicians, Including Health,19,0.77
+Locksmiths and Safe Repairers,49,0.77
+Tree Trimmers and Pruners,37,0.77
+Bartenders,35,0.77
+Purchasing Agents, Except Wholesale, Retail, and Farm Products,13,0.77
+Dishwashers,35,0.77
+Hunters and Trappers,45,0.77
+Computer Operators,43,0.78
+Gas Plant Operators,51,0.78
+Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic,51,0.78
+Medical Equipment Preparers,31,0.78
+Postal Service Mail Sorters, Processors, and Processing Machine Operators,43,0.79
+Heavy and Tractor-Trailer Truck Drivers,53,0.79
+Shampooers,39,0.79
+Drywall and Ceiling Tile Installers,47,0.79
+Helpers–Installation, Maintenance, and Repair Workers,49,0.79
+Motorcycle Mechanics,49,0.79
+Aircraft Structure, Surfaces, Rigging, and Systems Assemblers,51,0.79
+Logging Equipment Operators,45,0.79
+Floor Layers, Except Carpet, Wood, and Hard Tiles,47,0.79
+Derrick Operators, Oil and Gas,47,0.8
+Barbers,39,0.8
+Cooks, Fast Food,35,0.81
+Word Processors and Typists,43,0.81
+Electrical and Electronics Drafters,17,0.81
+Electro-Mechanical Technicians,17,0.81
+Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders,51,0.81
+Property, Real Estate, and Community Association Managers,11,0.81
+Medical Secretaries,43,0.81
+Pressers, Textile, Garment, and Related Materials,51,0.81
+Nonfarm Animal Caretakers,39,0.82
+Brickmasons and Blockmasons,47,0.82
+Pile-Driver Operators,47,0.82
+Sheet Metal Workers,47,0.82
+Refractory Materials Repairers, Except Brickmasons,49,0.82
+Security and Fire Alarm Systems Installers,49,0.82
+Engine and Other Machine Assemblers,51,0.82
+Helpers–Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters,47,0.83
+Paving, Surfacing, and Tamping Equipment Operators,47,0.83
+Rolling Machine Setters, Operators, and Tenders, Metal and Plastic,51,0.83
+Gaming Change Persons and Booth Cashiers,41,0.83
+Baggage Porters and Bellhops,39,0.83
+Septic Tank Servicers and Sewer Pipe Cleaners,47,0.83
+Automotive and Watercraft Service Attendants,53,0.83
+Printing Press Operators,51,0.83
+Insulation Workers, Floor, Ceiling, and Wall,47,0.83
+Segmental Pavers,47,0.83
+Mixing and Blending Machine Setters, Operators, and Tenders,51,0.83
+Sailors and Marine Oilers,53,0.83
+Cooks, Institution and Cafeteria,35,0.83
+Railroad Conductors and Yardmasters,53,0.83
+Railroad Brake, Signal, and Switch Operators,53,0.83
+Structural Iron and Steel Workers,47,0.83
+Fishers and Related Fishing Workers,45,0.83
+Plasterers and Stucco Masons,47,0.84
+Parking Enforcement Workers,33,0.84
+Proofreaders and Copy Markers,43,0.84
+Wellhead Pumpers,53,0.84
+Tailors, Dressmakers, and Custom Sewers,51,0.84
+Security Guards,33,0.84
+Lathe and Turning Machine Tool Setters, Operators, and Tenders, Metal and Plastic,51,0.84
+Layout Workers, Metal and Plastic,51,0.84
+Electrical and Electronics Engineering Technicians,17,0.84
+Tool and Die Makers,51,0.84
+Chemical Plant and System Operators,51,0.85
+Earth Drillers, Except Oil and Gas,47,0.85
+Nuclear Technicians,19,0.85
+Laborers and Freight, Stock, and Material Movers, Hand,53,0.85
+Meter Readers, Utilities,43,0.85
+Power Plant Operators,51,0.85
+Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products,41,0.85
+Executive Secretaries and Executive Administrative Assistants,43,0.86
+Correspondence Clerks,43,0.86
+Maintenance Workers, Machinery,49,0.86
+Computer-Controlled Machine Tool Operators, Metal and Plastic,51,0.86
+Real Estate Sales Agents,41,0.86
+Cutting and Slicing Machine Setters, Operators, and Tenders,51,0.86
+Veterinary Assistants and Laboratory Animal Caretakers,31,0.86
+Subway and Streetcar Operators,53,0.86
+Sawing Machine Setters, Operators, and Tenders, Wood,51,0.86
+Food Servers, Nonrestaurant,35,0.86
+Plant and System Operators, All Other,51,0.86
+Highway Maintenance Workers,47,0.87
+Parking Lot Attendants,53,0.87
+Floor Sanders and Finishers,47,0.87
+Food Preparation Workers,35,0.87
+Furniture Finishers,51,0.87
+Paperhangers,47,0.87
+Carpet Installers,47,0.87
+Pourers and Casters, Metal,51,0.87
+Forest and Conservation Workers,45,0.87
+Miscellaneous Agricultural Workers,45,0.87
+Buyers and Purchasing Agents, Farm Products,13,0.87
+Metal-Refining Furnace Operators and Tenders,51,0.88
+Rail Car Repairers,49,0.88
+Tool Grinders, Filers, and Sharpeners,51,0.88
+Terrazzo Workers and Finishers,47,0.88
+Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers,51,0.88
+Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters,51,0.88
+Cartographers and Photogrammetrists,17,0.88
+Semiconductor Processors,51,0.88
+Production, Planning, and Expediting Clerks,43,0.88
+Construction Laborers,47,0.88
+Taxi Drivers and Chauffeurs,53,0.89
+Sewing Machine Operators,51,0.89
+Stationary Engineers and Boiler Operators,51,0.89
+Rail-Track Laying and Maintenance Equipment Operators,47,0.89
+Riggers,49,0.89
+Bus Drivers, School or Special Client,53,0.89
+Stonemasons,47,0.89
+Medical Transcriptionists,31,0.89
+Bakers,51,0.89
+Technical Writers,27,0.89
+Molders, Shapers, and Casters, Except Metal and Plastic,51,0.9
+Signal and Track Switch Repairers,49,0.9
+Pump Operators, Except Wellhead Pumpers,53,0.9
+Appraisers and Assessors of Real Estate,13,0.9
+Patternmakers, Metal and Plastic,51,0.9
+Transportation Inspectors,53,0.9
+Traffic Technicians,53,0.9
+Crane and Tower Operators,53,0.9
+Roofers,47,0.9
+Reinforcing Iron and Rebar Workers,47,0.9
+Medical and Clinical Laboratory Technologists,29,0.9
+Human Resources Assistants, Except Payroll and Timekeeping,43,0.9
+Mechanical Door Repairers,49,0.91
+Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic,51,0.91
+Patternmakers, Wood,51,0.91
+Automotive Body and Related Repairers,49,0.91
+Geological and Petroleum Technicians,19,0.91
+Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic,51,0.91
+Dining Room and Cafeteria Attendants and Bartender Helpers,35,0.91
+Electrical and Electronics Installers and Repairers, Transportation Equipment,49,0.91
+Rail Yard Engineers, Dinkey Operators, and Hostlers,53,0.91
+ticMultiple Machine Tool Setters, Operators, and Tenders, Metal and Plas-,51,0.91
+Coating, Painting, and Spraying Machine Setters, Operators, and Tenders,51,0.91
+Medical Records and Health Information Technicians,29,0.91
+Gas Compressor and Gas Pumping Station Operators,53,0.91
+Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders,51,0.91
+Tour Guides and Escorts,39,0.91
+Musical Instrument Repairers and Tuners,49,0.91
+Gaming and Sports Book Writers and Runners,39,0.91
+Helpers–Carpenters,47,0.92
+Production Workers, All Other,51,0.92
+Combined Food Preparation and Serving Workers, Including Fast Food,35,0.92
+Retail Salespersons,41,0.92
+Plating and Coating Machine Setters, Operators, and Tenders, Metal and Plastic,51,0.92
+Fence Erectors,47,0.92
+Cabinetmakers and Bench Carpenters,51,0.92
+Insurance Sales Agents,41,0.92
+Dredge Operators,53,0.92
+Loan Interviewers and Clerks,43,0.92
+Pharmacy Technicians,29,0.92
+Office Machine Operators, Except Computer,43,0.92
+Painting, Coating, and Decorating Workers,51,0.92
+Butchers and Meat Cutters,51,0.93
+Industrial Truck and Tractor Operators,53,0.93
+Forging Machine Setters, Operators, and Tenders, Metal and Plastic,51,0.93
+Tax Examiners and Collectors, and Revenue Agents,13,0.93
+Refuse and Recyclable Material Collectors,53,0.93
+Extruding, Forming, Pressing, and Compacting Machine Setters, Operators and Tenders,51,0.93
+Radio, Cellular, and Tower Equipment Installers and Repairs,49,0.93
+Machine Feeders and Offbearers,53,0.93
+Model Makers, Metal and Plastic,51,0.93
+Locomotive Firers,53,0.93
+Outdoor Power Equipment and Other Small Engine Mechanics,49,0.93
+Conveyor Operators and Tenders,53,0.93
+Service Unit Operators, Oil, Gas, and Mining,47,0.93
+Fiberglass Laminators and Fabricators,51,0.93
+Cooling and Freezing Equipment Operators and Tenders,51,0.93
+Interviewers, Except Eligibility and Loan,43,0.94
+Cooks, Short Order,35,0.94
+Excavating and Loading Machine and Dragline Operators,53,0.94
+Helpers–Painters, Paperhangers, Plasterers, and Stucco Masons,47,0.94
+Hotel, Motel, and Resort Desk Clerks,43,0.94
+Tire Builders,51,0.94
+Door-to-Door Sales Workers, News and Street Vendors, and Related Workers,41,0.94
+First-Line Supervisors of Housekeeping and Janitorial Workers,37,0.94
+Agricultural Inspectors,45,0.94
+Paralegals and Legal Assistants,23,0.94
+Meat, Poultry, and Fish Cutters and Trimmers,51,0.94
+Welders, Cutters, Solderers, and Brazers,51,0.94
+Accountants and Auditors,13,0.94
+Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic,51,0.94
+Mail Clerks and Mail Machine Operators, Except Postal Service,43,0.94
+Waiters and Waitresses,35,0.94
+Budget Analysts,13,0.94
+Cement Masons and Concrete Finishers,47,0.94
+Bicycle Repairers,49,0.94
+Coin, Vending, and Amusement Machine Servicers and Repairers,49,0.94
+Couriers and Messengers,43,0.94
+Jewelers and Precious Stone and Metal Workers,51,0.95
+Postal Service Clerks,43,0.95
+Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic,51,0.95
+Landscaping and Groundskeeping Workers,37,0.95
+Adhesive Bonding Machine Operators and Tenders,51,0.95
+Gaming Surveillance Officers and Gaming Investigators,33,0.95
+Electrical and Electronic Equipment Assemblers,51,0.95
+Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic,51,0.95
+Animal Breeders,45,0.95
+Operating Engineers and Other Construction Equipment Operators,47,0.95
+Library Assistants, Clerical,43,0.95
+Nuclear Power Reactor Operators,51,0.95
+Bill and Account Collectors,43,0.95
+Textile Cutting Machine Setters, Operators, and Tenders,51,0.95
+Weighers, Measurers, Checkers, and Samplers, Recordkeeping,43,0.95
+Manicurists and Pedicurists,39,0.95
+Print Binding and Finishing Workers,51,0.95
+Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders,51,0.96
+Billing and Posting Clerks,43,0.96
+Ushers, Lobby Attendants, and Ticket Takers,39,0.96
+Cooks, Restaurant,35,0.96
+Fabric Menders, Except Garment,49,0.96
+Gaming Dealers,39,0.96
+Locomotive Engineers,53,0.96
+Model Makers, Wood,51,0.96
+Secretaries and Administrative Assistants, Except Legal, Medical, and Executive,43,0.96
+Surveying and Mapping Technicians,17,0.96
+Rock Splitters, Quarry,47,0.96
+Counter Attendants, Cafeteria, Food Concession, and Coffee Shop,35,0.96
+Switchboard Operators, Including Answering Service,43,0.96
+Compensation and Benefits Managers,11,0.96
+Office Clerks, General,43,0.96
+Receptionists and Information Clerks,43,0.96
+Dispatchers, Except Police, Fire, and Ambulance,43,0.96
+Cashiers,41,0.97
+Camera and Photographic Equipment Repairers,49,0.97
+Motion Picture Projectionists,39,0.97
+Prepress Technicians and Workers,51,0.97
+File Clerks,43,0.97
+Real Estate Brokers,41,0.97
+Telephone Operators,43,0.97
+Agricultural and Food Science Technicians,19,0.97
+Payroll and Timekeeping Clerks,43,0.97
+Credit Authorizers, Checkers, and Clerks,43,0.97
+Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop,35,0.97
+Counter and Rental Clerks,41,0.97
+Bridge and Lock Tenders,53,0.97
+Ophthalmic Laboratory Technicians,51,0.97
+Woodworking Machine Setters, Operators, and Tenders, Except Sawing,51,0.97
+Team Assemblers,51,0.97
+Shoe Machine Operators and Tenders,51,0.97
+Electromechanical Equipment Assemblers,51,0.97
+Farm Labor Contractors,13,0.97
+Dental Laboratory Technicians,51,0.97
+Log Graders and Scalers,45,0.97
+Pesticide Handlers, Sprayers, and Applicators, Vegetation,37,0.97
+Grinding and Polishing Workers, Hand,51,0.97
+Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders,51,0.97
+Textile Bleaching and Dyeing Machine Operators and Tenders,51,0.97
+Shipping, Receiving, and Traffic Clerks,43,0.98
+Timing Device Assemblers and Adjusters,51,0.98
+Insurance Claims and Policy Processing Clerks,43,0.98
+Brokerage Clerks,43,0.98
+Order Clerks,43,0.98
+Loan Officers,13,0.98
+Insurance Appraisers, Auto Damage,13,0.98
+Umpires, Referees, and Other Sports Officials,27,0.98
+Tellers,43,0.98
+Etchers and Engravers,51,0.98
+Packaging and Filling Machine Operators and Tenders,51,0.98
+Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic,51,0.98
+Procurement Clerks,43,0.98
+Models,41,0.98
+Inspectors, Testers, Sorters, Samplers, and Weighers,51,0.98
+Bookkeeping, Accounting, and Auditing Clerks,43,0.98
+Legal Secretaries,43,0.98
+Radio Operators,27,0.98
+Driver/Sales Workers,53,0.98
+Claims Adjusters, Examiners, and Investigators,11,0.98
+Parts Salespersons,41,0.98
+Credit Analysts,13,0.98
+Telemarketers,41,0.99
+Title Examiners, Abstractors, and Searchers,23,0.99
+Sewers, Hand,51,0.99
+Mathematical Technicians,15,0.99
+Insurance Underwriters,11,0.99
+Watch Repairers,49,0.99
+Cargo and Freight Agents,43,0.99
+Tax Preparers,13,0.99
+Photographic Process Workers and Processing Machine Operators,51,0.99
+New Accounts Clerks,43,0.99
+Library Technicians,25,0.99
+Data Entry Keyers,43,0.99
