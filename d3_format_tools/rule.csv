@@ -1,8 +1,54 @@
-Rule1,Status1,1
-Rule1,Status2,1
-Rule1,Status3,1
-Rule1,Status4,2
-Rule2,Status1,2
-Rule2,Status2,1
-Rule2,Status3,1
-Rule2,Status4,3
+parent,name
+Chandra Prasad,
+Dinesh Chahlia,Chandra Prasad
+Nicole Desrosiers,Dinesh Chahlia
+Jinseong Jeon,Rajesh Mishra
+Helton Duarte,Abuna Demoz
+Artem Grachev,Anthony Feddersen
+Anthony Feddersen,Chandra Prasad
+Luis Daniel Ballesteros,Anthony Feddersen
+Rajesh Mishra,Chandra Prasad
+Lin Guo,Dinesh Chahlia
+Eunsoo Seo,Rajesh Mishra
+Jarek Kowalski,Chandra Prasad
+Dustin Green,Chandra Prasad
+Ram chandra Sankhala,Rajesh Mishra
+Hamid Zia,Abuna Demoz
+Haney Maxwell,Abuna Demoz
+Vibhooti Verma,Rajesh Mishra
+Yingxin Jiang,Rajesh Mishra
+Sanjna Venkataraman,Dinesh Chahlia
+Yuly Suvorov,Dinesh Chahlia
+Daniel Burrows,Anthony Feddersen
+Theodora Yeung,Rajesh Mishra
+Dustin Carlino,Anthony Feddersen
+Bilal Munir Mughal,Rajesh Mishra
+Osmar Coronel,Karen Aleksanyan
+Xintian Yang,Abuna Demoz
+Ozan Demir,Amit Mondal
+Zain Rizvi,Dinesh Chahlia
+Prashant Jayaraman,Anthony Feddersen
+Emilbek Joldoshev,Dinesh Chahlia
+João Porto,Amit Mondal
+Ross Bagley,Dinesh Chahlia
+Parya Moinzadeh,Amit Mondal
+Amit Mondal,Chandra Prasad
+Gabriel Kliot,Amit Mondal
+Saiful Islam,Rajesh Mishra
+Xinhang Shao,Amit Mondal
+Greg Teather,Anthony Feddersen
+Herbert Duarte,Rajesh Mishra
+Bonan Liu,Anthony Feddersen
+Jeremy Edwards,Rajesh Mishra
+Greg Altman,Amit Mondal
+Stefan Mellem,Rajesh Mishra
+Karen Aleksanyan,Rajesh Mishra
+Abuna Demoz,Chandra Prasad
+Austin Tsao,Daniel Broudy
+Josh McAdams,Anthony Feddersen
+Qingyu Meng,Abuna Demoz
+Daniel Broudy,Abuna Demoz
+Dan Radion,Abuna Demoz
+Denis Seniuc,Dinesh Chahlia
+Sefa Kilic,Abuna Demoz
+Gaoyuan Chen,Abuna Demoz
