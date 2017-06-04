@@ -1,115 +1,229 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<style> /* set the CSS */
+<html>
 
-.node circle {
-  fill: #fff;
-  stroke: steelblue;
-  stroke-width: 3px;
-}
+<head>
+  <meta charset="utf-8" />
+  <title>D3 Scroll</title>
 
-.node text { font: 12px sans-serif; }
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
+</head>
+<style>
+  h1 {
+    font-family: 'Josefin Sans', sans-serif;
+  }
 
-.node--internal text {
-  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
-}
+  h2 {
+    font-family: 'Josefin Sans', sans-serif;
+  }
 
-.link {
-  fill: none;
-  stroke: #ccc;
-  stroke-width: 2px;
-}
+  h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+  }
+
+  li {
+    text-align: left;
+  }
+
+  .intro {
+    text-align: center;
+  }
+
+  p {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+  }
+
+  a,
+  a:active,
+  a:visited {
+    color: #2d3644;
+    text-decoration: none;
+    border-bottom: 1px blue dotted;
+  }
+
+  a:hover {
+    color: #5493ff;
+    text-decoration: underline;
+    border: none;
+  }
+
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .person {
+    height: 20px;
+    position: relative;
+  }
+
+  .person .label {
+    width: 90px;
+    text-align: right;
+  }
+
+  .person .bar {
+    height: 19px;
+    background-color: steelblue;
+    position: absolute;
+    left: 100px;
+  }
+
+  .person div {
+    display: inline-block;
+  }
+
+  .data-view {
+    padding: 10px;
+    color: #777;
+    font-size: 12px;
+    width: 700px;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #f8f8f2;
+    background: none;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 11px;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  /* Code blocks */
+
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+    border-radius: 0.3em;
+  }
+
+   :not(pre)>code[class*="language-"],
+  pre[class*="language-"] {
+    background: #272822;
+  }
+  /* Inline code */
+
+   :not(pre)>code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+    white-space: normal;
+  }
+
+  .token.cdata,
+  .token.comment,
+  .token.doctype,
+  .token.prolog {
+    color: slategray;
+  }
+
+  .token.punctuation {
+    color: #f8f8f2;
+  }
+
+  .namespace {
+    opacity: 0.7;
+  }
+
+  .token.constant,
+  .token.deleted,
+  .token.property,
+  .token.symbol,
+  .token.tag {
+    color: #f92672;
+  }
+
+  .token.boolean,
+  .token.number {
+    color: #ae81ff;
+  }
+
+  .token.attr-name,
+  .token.builtin,
+  .token.char,
+  .token.inserted,
+  .token.selector,
+  .token.string {
+    color: #a6e22e;
+  }
+
+  .language-css .token.string,
+  .style .token.string,
+  .token.entity,
+  .token.operator,
+  .token.url,
+  .token.variable {
+    color: #f8f8f2;
+  }
+
+  .token.atrule,
+  .token.attr-value,
+  .token.function {
+    color: #e6db74;
+  }
+
+  .token.keyword {
+    color: #66d9ef;
+  }
+
+  .token.important,
+  .token.regex {
+    color: #fd971f;
+  }
+
+  .token.bold,
+  .token.important {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.entity {
+    cursor: help;
+  }
 
 </style>
 
 <body>
 
-<!-- load the d3.js library -->
-<script src="//d3js.org/d3.v4.min.js"></script>
-<script>
-
-// set the dimensions and margins of the diagram
-var margin = {top: 20, right: 90, bottom: 30, left: 200},
-    width = 960 - margin.left - margin.right,
-    height = 1200 - margin.top - margin.bottom;
-
-// declares a tree layout and assigns the size
-var treemap = d3.tree()
-    .size([height, width]);
-
-// load the external data
-d3.csv("org.csv", function(error, flatData) {
-  if (error) throw error;
-
-  // assign null correctly
-  flatData.forEach(function(d) {
-      if (d.parent == "null") { d.parent = null};
-    });
-
-  // convert the flat data into a hierarchy
-  var treeData = d3.stratify()
-    .id(function(d) { return d.name; })
-    .parentId(function(d) { return d.parent; })
-    (flatData);
-
-  // assign the name to each node
-  treeData.each(function(d) {
-      d.name = d.id;
-    });
-
-  //  assigns the data to a hierarchy using parent-child relationships
-  var nodes = d3.hierarchy(treeData, function(d) {
-    return d.children;
-    });
-
-  // maps the node data to the tree layout
-  nodes = treemap(nodes);
-
-  // append the svg object to the body of the page
-  // appends a 'group' element to 'svg'
-  // moves the 'group' element to the top left margin
-  var svg = d3.select("body").append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom),
-    g = svg.append("g")
-      .attr("transform",
-        "translate(" + margin.left + "," + margin.top + ")");
-
-  // adds the links between the nodes
-  var link = g.selectAll(".link")
-    .data( nodes.descendants().slice(1))
-    .enter().append("path")
-    .attr("class", "link")
-    .attr("d", function(d) {
-       return "M" + d.y + "," + d.x
-       + "C" + (d.y + d.parent.y) / 2 + "," + d.x
-       + " " + (d.y + d.parent.y) / 2 + "," + d.parent.x
-       + " " + d.parent.y + "," + d.parent.x;
-       });
-
-  // adds each node as a group
-  var node = g.selectAll(".node")
-    .data(nodes.descendants())
-    .enter().append("g")
-    .attr("class", function(d) {
-      return "node" +
-      (d.children ? " node--internal" : " node--leaf"); })
-    .attr("transform", function(d) {
-      return "translate(" + d.y + "," + d.x + ")"; });
-
-  // adds the circle to the node
-  node.append("circle")
-    .attr("r", 10);
-
-  // adds the text to the node
-  node.append("text")
-    .attr("dy", ".35em")
-    .attr("x", function(d) { return d.children ? -13 : 13; })
-    .style("text-anchor", function(d) {
-    return d.children ? "end" : "start"; })
-    .text(function(d) { return d.data.name; });
-
-});
-
-</script>
+  <div class="w3-content" style="max-width:700px;margin-top:46px">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:500px" id="band">
+      <h2 class="w3-wide">D3 Scroll Visualization</h2>
+      <br>
+      <p class="w3-justify">
+        A D3 scroller based on the work of Carl Benedikt Frey and Michael A. Osborne
+      </p>
+      <p class="w3-justify">
+        Borrowing lots of code from <a href="https://github.com/mkfreeman">Michael Freeman</a>
+        and <a href="https://github.com/vlandham/scroll_demo">Jim Vallandingham</a>
+      </p>
+      <br>
+      <p class="intro">
+        1. <a href="/d301/scroll.html">The future of employment</a>
+      </p>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
 </body>
+
+</html>
