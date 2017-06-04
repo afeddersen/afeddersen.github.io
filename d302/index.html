@@ -1,115 +1,109 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<style> /* set the CSS */
+<html>
 
-.node circle {
-  fill: #fff;
-  stroke: steelblue;
-  stroke-width: 3px;
-}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 10: Lab 1</title>
 
-.node text { font: 12px sans-serif; }
+    <!-- Libraries -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.js"></script>
+    <link rel="stylesheet" href="//rawgithub.com/Caged/d3-tip/master/examples/example-styles.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Josefin+Sans"
+        rel="stylesheet">
 
-.node--internal text {
-  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
-}
-
-.link {
-  fill: none;
-  stroke: #ccc;
-  stroke-width: 2px;
-}
-
-</style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/scroll.css" />
+</head>
 
 <body>
-
-<!-- load the d3.js library -->
-<script src="//d3js.org/d3.v4.min.js"></script>
-<script>
-
-// set the dimensions and margins of the diagram
-var margin = {top: 20, right: 90, bottom: 30, left: 200},
-    width = 960 - margin.left - margin.right,
-    height = 1200 - margin.top - margin.bottom;
-
-// declares a tree layout and assigns the size
-var treemap = d3.tree()
-    .size([height, width]);
-
-// load the external data
-d3.csv("org.csv", function(error, flatData) {
-  if (error) throw error;
-
-  // assign null correctly
-  flatData.forEach(function(d) {
-      if (d.parent == "null") { d.parent = null};
-    });
-
-  // convert the flat data into a hierarchy
-  var treeData = d3.stratify()
-    .id(function(d) { return d.name; })
-    .parentId(function(d) { return d.parent; })
-    (flatData);
-
-  // assign the name to each node
-  treeData.each(function(d) {
-      d.name = d.id;
-    });
-
-  //  assigns the data to a hierarchy using parent-child relationships
-  var nodes = d3.hierarchy(treeData, function(d) {
-    return d.children;
-    });
-
-  // maps the node data to the tree layout
-  nodes = treemap(nodes);
-
-  // append the svg object to the body of the page
-  // appends a 'group' element to 'svg'
-  // moves the 'group' element to the top left margin
-  var svg = d3.select("body").append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom),
-    g = svg.append("g")
-      .attr("transform",
-        "translate(" + margin.left + "," + margin.top + ")");
-
-  // adds the links between the nodes
-  var link = g.selectAll(".link")
-    .data( nodes.descendants().slice(1))
-    .enter().append("path")
-    .attr("class", "link")
-    .attr("d", function(d) {
-       return "M" + d.y + "," + d.x
-       + "C" + (d.y + d.parent.y) / 2 + "," + d.x
-       + " " + (d.y + d.parent.y) / 2 + "," + d.parent.x
-       + " " + d.parent.y + "," + d.parent.x;
-       });
-
-  // adds each node as a group
-  var node = g.selectAll(".node")
-    .data(nodes.descendants())
-    .enter().append("g")
-    .attr("class", function(d) {
-      return "node" +
-      (d.children ? " node--internal" : " node--leaf"); })
-    .attr("transform", function(d) {
-      return "translate(" + d.y + "," + d.x + ")"; });
-
-  // adds the circle to the node
-  node.append("circle")
-    .attr("r", 10);
-
-  // adds the text to the node
-  node.append("text")
-    .attr("dy", ".35em")
-    .attr("x", function(d) { return d.children ? -13 : 13; })
-    .style("text-anchor", function(d) {
-    return d.children ? "end" : "start"; })
-    .text(function(d) { return d.data.name; });
-
-});
-
-</script>
+    <div class="container">
+        <h1>THE FUTURE OF EMPLOYMENT</h1>
+        <p>HOW SUSCEPTIBLE ARE JOBS TO COMPUTERISATION?
+        </p>
+        <div id="sandbox">
+            <div id='graphic'>
+                <div id='sections'>
+                    <section class="step">
+                        <div class="step-title">Therapists</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, enim obcaecati maxime veritatis, facere nostrum aliquid delectus, quia voluptates iste ducimus nobis earum aspernatur ratione. Tempora, dolores esse hic. Nulla.
+                        </p>
+                    </section>
+                    <section class="step">
+                        <div class="step-title">Managers</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, enim obcaecati maxime veritatis, facere nostrum aliquid delectus, quia voluptates iste ducimus nobis earum aspernatur ratione. Tempora, dolores esse hic. Nulla.
+                        </p>
+                    </section>
+                    <section class="step">
+                        <div class="step-title">Engineers</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, enim obcaecati maxime veritatis, facere nostrum aliquid delectus, quia voluptates iste ducimus nobis earum aspernatur ratione. Tempora, dolores esse hic. Nulla.
+                        </p>
+                    </section>
+                    <section class="step">
+                        <div class="step-title">Artists</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, enim obcaecati maxime veritatis, facere nostrum aliquid delectus, quia voluptates iste ducimus nobis earum aspernatur ratione. Tempora, dolores esse hic. Nulla.
+                        </p>
+                    </section>
+                    <section class="step">
+                        <div class="step-title">Computer Nerds</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, enim obcaecati maxime veritatis, facere nostrum aliquid delectus, quia voluptates iste ducimus nobis earum aspernatur ratione. Tempora, dolores esse hic. Nulla.
+                        </p>
+                    </section>
+                </div>
+                <div id='vis'>
+                </div>
+            </div>
+        </div>
 </body>
+<!-- your script files -->
+<script src="js/scroll.js"></script>
+<script src="js/scatter.js"></script>
+<script>
+    /* *************************** Update function ***************************** */
+    // Write an update function that uses a switch statement to set the sex and type to be visualized
+    var update = function(index) {
+        // Switch based on index
+        switch (index) {
+            case 0:
+                code = '29';
+                break;
+            case 1:
+                code = '11';
+                break;
+            case 2:
+                code = '17';
+                break;
+            case 3:
+                code = '27';
+                break;
+            default:
+                code = '15';
+                break;
+        }
+        // Filter data to the current settings then draw that data
+        var currentData = filterData();
+        draw(currentData);
+    };
+    // Load your data
+    d3.csv('data/data.csv', function(error, data) {
+        allData = data;
+        /* *************************** Create your scroller ***************************** */
+        // Define a new scroller, and use the `.container` method to specify the desired container as #graphic
+        var scroll = scroller()
+            .container(d3.select('#graphic'));
+        // Pass in a selection of all elements that you wish to fire a step event (class "step")
+        scroll(d3.selectAll('.step')); // each section with class `step` is a new step
+        // Use the ".on('active')" method to fire your update event when a section is active
+        scroll.on('active', function(index) {
+            update(index);
+        })
+    })
+</script>
+
+</html>
