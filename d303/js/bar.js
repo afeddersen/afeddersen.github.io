@@ -229,7 +229,7 @@ var draw = function(data) {
     var bars = g.selectAll('rect').data(data);
 
     // Use the .enter() method to get your entering elements, and assign initial positions
-    bars.enter().append('rect')
+    var barsEnter = bars.enter().append('rect')
         .attr('x', function(d) {
             return xScale(d.occupation);
         })
@@ -254,6 +254,33 @@ var draw = function(data) {
         .attr('height', function(d) {
             return drawHeight - yScale(d.probability);
         });
+
+        // Use the .enter() method to get your entering elements, and assign initial positions
+        bars.merge(barsEnter)
+            .attr('x', function(d) {
+                return xScale(d.occupation);
+            })
+            .attr('y', function(d) {
+                return drawHeight;
+            })
+            .attr('height', 0)
+            .attr('class', 'bar')
+            .style("fill", "red")
+            .on('mouseover', tip.show)
+            .on('mouseout', tip.hide)
+            .attr('width', xScale.bandwidth())
+            .merge(bars)
+            .transition()
+            .duration(300)
+            .delay(function(d, i) {
+                return i * 50;
+            })
+            .attr('y', function(d) {
+                return yScale(d.probability);
+            })
+            .attr('height', function(d) {
+                return drawHeight - yScale(d.probability);
+            });
 
     // Use the .exit() and .remove() methods to remove elements that are no longer in the data
     bars.exit().remove();
