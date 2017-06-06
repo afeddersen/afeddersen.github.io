@@ -12,15 +12,15 @@ var allData;
 
 // Margin: how much space to put in the SVG for axes/titles
 var margin = {
-    left: 100,
-    bottom: 500,
-    top: 50,
-    right: 50
+  left: 100,
+  bottom: 500,
+  top: 50,
+  right: 180
 };
 
 // Height and width of the total area
-var height = 800;
-var width = 1000;
+var height = 1000;
+var width = 1200;
 
 // Height/width of the drawing area for data symbols
 var drawHeight = height - margin.bottom - margin.top;
@@ -30,9 +30,9 @@ var drawWidth = width - margin.left - margin.right;
 // Select SVG to work with, setting width and height (the vis <div> is defined
 // in the index.html file)
 var svg = d3.select('#vis')
-    .append('svg')
-    .attr('height', height)
-    .attr('width', width);
+  .append('svg')
+  .attr('height', height)
+  .attr('width', width);
 
 // Append a 'g' element in which to place the rects, shifted down and right
 // from the top left corner
@@ -40,9 +40,9 @@ var svg = d3.select('#vis')
 // The SVG <g> element is used to group SVG shapes together. Once grouped you
 // can transform the whole group of shapes as if it was a single shape.
 var g = svg.append('g')
-    .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
-    .attr('height', drawHeight)
-    .attr('width', drawWidth);
+  .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+  .attr('height', drawHeight)
+  .attr('width', drawWidth);
 
 // Append an xaxis label to your SVG, specifying the 'transform' attribute to
 // position it (don't call the axis function yet)
@@ -50,8 +50,8 @@ var g = svg.append('g')
 // Axis labels aren't built-in to D3's axis component, but you can add labels
 // yourself simply by adding an SVG text element.
 var xAxisLabel = svg.append('g')
-    .attr('transform', 'translate(' + margin.left + ',' + (drawHeight + margin.top) + ')')
-    .attr('class', 'axis')
+  .attr('transform', 'translate(' + margin.left + ',' + (drawHeight + margin.top) + ')')
+  .attr('class', 'axis')
 
 
 // Append an xaxis label to your SVG, specifying the 'transform' attribute to
@@ -60,23 +60,23 @@ var xAxisLabel = svg.append('g')
 // Axis labels aren't built-in to D3's axis component, but you can add labels
 // yourself simply by adding an SVG text element.
 var yAxisLabel = svg.append('g')
-    .attr('class', 'axis')
-    .attr('transform', 'translate(' + margin.left + ',' + (margin.top) + ')');
+  .attr('class', 'axis')
+  .attr('transform', 'translate(' + margin.left + ',' + (margin.top) + ')');
 
 // Append text to label the x axis (don't specify the text yet)
 var xAxisText = svg.append('text')
-    .attr('transform', 'translate(' + (margin.left + drawWidth / 2) + ',' + (drawHeight + margin.top + 40) + ')')
-    .attr('class', 'title')
-    .selectAll("text")
-    .style("text-anchor", "end")
-    .attr("dx", "-.8em")
-    .attr("dy", ".15em")
-    .attr("transform", "rotate(-65)");
+  .attr('transform', 'translate(' + (margin.left + drawWidth / 2) + ',' + (drawHeight + margin.top + 40) + ')')
+  .attr('class', 'title')
+  .selectAll("text")
+  .style("text-anchor", "end")
+  .attr("dx", "-.8em")
+  .attr("dy", ".15em")
+  .attr("transform", "rotate(-65)");
 
 // Append text to label the y axis (don't specify the text yet)
 var yAxisText = svg.append('text')
-    .attr('transform', 'translate(' + (margin.left - 40) + ',' + (margin.top + drawHeight / 2) + ') rotate(-90)')
-    .attr('class', 'title');
+  .attr('transform', 'translate(' + (margin.left - 40) + ',' + (margin.top + drawHeight / 2) + ') rotate(-90)')
+  .attr('class', 'title');
 
 // Define xAxis using d3.axisBottom(). Scale will be set in the setAxes function.
 //
@@ -107,7 +107,7 @@ var xAxis = d3.axisBottom();
 //
 // https://www.pshrmn.com/tutorials/d3/axes/
 var yAxis = d3.axisLeft()
-    .tickFormat(d3.format(".0%"));
+  .tickFormat(d3.format(".0%"));
 
 // Define an xScale with d3.scaleBand. Domain/rage will be set in the
 // setScales function.
@@ -138,70 +138,70 @@ var yScale = d3.scaleLinear();
 
 // Write a function for setting scales.
 var setScales = function(data) {
-    // Get the unique values of occupation for the domain of your x scale
-    var occupation = data.map(function(d) {
-        return d.occupation;
-    });
+  // Get the unique values of occupation for the domain of your x scale
+  var occupation = data.map(function(d) {
+    return d.occupation;
+  });
 
-    // When you first start out draw­ing some­thing using D3, you need to think
-    // about 2 main things.
-    // 1. The size of your dataset.
-    // 2. The dimen­sions of the browser/svg on which you want to ren­der
-    // your data.
-    //
-    // The for­mer is what is known as the domain and the lat­ter asso­ci­ated
-    // with range.
-    //
-    // Set the domain/range of your xScale
-    xScale.range([0, drawWidth])
-        .padding(0.1)
-        .domain(occupation);
+  // When you first start out draw­ing some­thing using D3, you need to think
+  // about 2 main things.
+  // 1. The size of your dataset.
+  // 2. The dimen­sions of the browser/svg on which you want to ren­der
+  // your data.
+  //
+  // The for­mer is what is known as the domain and the lat­ter asso­ci­ated
+  // with range.
+  //
+  // Set the domain/range of your xScale
+  xScale.range([0, drawWidth])
+    .padding(0.1)
+    .domain(occupation);
 
-    // Get min/max values of the percent data (for your yScale domain)
-    var yMin = d3.min(data, function(d) {
-        return +d.probability;
-    });
+  // Get min/max values of the percent data (for your yScale domain)
+  var yMin = d3.min(data, function(d) {
+    return +d.probability;
+  });
 
-    var yMax = d3.max(data, function(d) {
-        return +d.probability;
-    });
+  var yMax = d3.max(data, function(d) {
+    return +d.probability;
+  });
 
-    // Set the domain/range of your yScale
-    yScale.range([drawHeight, 0])
-        .domain([0, yMax]);
+  // Set the domain/range of your yScale
+  yScale.range([drawHeight, 0])
+    .domain([0, yMax]);
 };
 
 /* *************************** Set axes ***************************** */
 
 // Function for setting axes
 var setAxes = function() {
-    // Set the scale of your xAxis object
-    xAxis.scale(xScale);
+  // Set the scale of your xAxis object
+  xAxis.scale(xScale);
 
-    // Set the scale of your yAxis object
-    yAxis.scale(yScale);
+  // Set the scale of your yAxis object
+  yAxis.scale(yScale);
 
-    // Render (call) your xAxis in your xAxisLabel
-    xAxisLabel.transition()
+  // Render (call) your xAxis in your xAxisLabel
+  xAxisLabel.transition()
     .duration(1500).call(xAxis)
     .selectAll("text")
     .attr("y", 0)
     .attr("x", 9)
     .attr("dy", ".35em")
-    .attr("transform", "rotate(90)")
+    .attr("transform", "rotate(45)")
     .style("text-anchor", "start");
 
-    // Render (call) your yAxis in your yAxisLabel
-    yAxisLabel.transition().duration(1500).call(yAxis);
+  // Render (call) your yAxis in your yAxisLabel
+  yAxisLabel.transition().duration(1500).call(yAxis);
 
-    // Update xAxisText and yAxisText labels
-    xAxisText.text('Occupation')
-    yAxisText.text('Probability of automation (' + code + ')');
+  // Update xAxisText and yAxisText labels
+  xAxisText.text('Occupation')
+  yAxisText.text('Probability of automation (' + code + ')');
 };
 
 // Add tip
 var tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
-    return d.occupation;
+  return d.occupation;
 });
 g.call(tip);
 
@@ -209,79 +209,79 @@ g.call(tip);
 
 // Write a function to filter down the data to the current sex and type
 var filterData = function() {
-    var currentData = allData.filter(function(d) {
-        return d.code == code
-    });
-    return currentData;
+  var currentData = allData.filter(function(d) {
+    return d.code == code
+  });
+  return currentData;
 };
 
 /* *************************** Draw function ***************************** */
 // Function to draw data
 // Store the data-join in a function: make sure to set the scales and update the axes in your function.
 var draw = function(data) {
-    // Set scales
-    setScales(data);
+  // Set scales
+  setScales(data);
 
-    // Set axes
-    setAxes();
+  // Set axes
+  setAxes();
 
-    // Select all rects and bind data
-    var bars = g.selectAll('rect').data(data);
+  // Select all rects and bind data
+  var bars = g.selectAll('rect').data(data);
 
-    // Use the .enter() method to get your entering elements, and assign initial positions
-    var barsEnter = bars.enter().append('rect')
-        .attr('x', function(d) {
-            return xScale(d.occupation);
-        })
-        .attr('y', function(d) {
-            return drawHeight;
-        })
-        .attr('height', 0)
-        .attr('class', 'bar')
-        .style("fill", "blue")
-        .on('mouseover', tip.show)
-        .on('mouseout', tip.hide)
-        .attr('width', xScale.bandwidth())
-        .merge(bars)
-        .transition()
-        .duration(300)
-        .delay(function(d, i) {
-            return i * 50;
-        })
-        .attr('y', function(d) {
-            return yScale(d.probability);
-        })
-        .attr('height', function(d) {
-            return drawHeight - yScale(d.probability);
-        });
+  // Use the .enter() method to get your entering elements, and assign initial positions
+  var barsEnter = bars.enter().append('rect')
+    .attr('x', function(d) {
+      return xScale(d.occupation);
+    })
+    .attr('y', function(d) {
+      return drawHeight;
+    })
+    .attr('height', 0)
+    .attr('class', 'bar')
+    .style("fill", "green")
+    .on('mouseover', tip.show)
+    .on('mouseout', tip.hide)
+    .attr('width', xScale.bandwidth())
+    .merge(bars)
+    .transition()
+    .duration(300)
+    .delay(function(d, i) {
+      return i * 50;
+    })
+    .attr('y', function(d) {
+      return yScale(d.probability);
+    })
+    .attr('height', function(d) {
+      return drawHeight - yScale(d.probability);
+    });
 
-        // Use the .enter() method to get your entering elements, and assign initial positions
-        bars.merge(barsEnter)
-            .attr('x', function(d) {
-                return xScale(d.occupation);
-            })
-            .attr('y', function(d) {
-                return drawHeight;
-            })
-            .attr('height', 0)
-            .attr('class', 'bar')
-            .style("fill", "blue")
-            .on('mouseover', tip.show)
-            .on('mouseout', tip.hide)
-            .attr('width', xScale.bandwidth())
-            .merge(bars)
-            .transition()
-            .duration(300)
-            .delay(function(d, i) {
-                return i * 50;
-            })
-            .attr('y', function(d) {
-                return yScale(d.probability);
-            })
-            .attr('height', function(d) {
-                return drawHeight - yScale(d.probability);
-            });
+  // Use the .enter() method to get your entering elements, and assign initial positions
+  bars.merge(barsEnter)
+    .attr('x', function(d) {
+      return xScale(d.occupation);
+    })
+    .attr('y', function(d) {
+      return drawHeight;
+    })
+    .attr('height', 0)
+    .attr('class', 'bar')
+    .style("fill", "green")
+    .on('mouseover', tip.show)
+    .on('mouseout', tip.hide)
+    .attr('width', xScale.bandwidth())
+    .merge(bars)
+    .transition()
+    .duration(300)
+    .delay(function(d, i) {
+      return i * 50;
+    })
+    .attr('y', function(d) {
+      return yScale(d.probability);
+    })
+    .attr('height', function(d) {
+      return drawHeight - yScale(d.probability);
+    });
 
-    // Use the .exit() and .remove() methods to remove elements that are no longer in the data
-    bars.exit().remove();
+  // Use the .exit() and .remove() methods to remove elements that are no longer in the data
+  bars.exit().remove();
 };
