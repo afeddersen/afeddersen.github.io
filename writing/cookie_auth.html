@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Authentication</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+</head>
+<style>
+  body {
+    background: #e2e1e0;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+  }
+
+  a,
+  a:visited,
+  a:active {
+    color: #2d3644;
+    text-decoration: none;
+    border-bottom: 1px blue dotted;
+  }
+
+  a:hover {
+    color: #5493ff;
+    text-decoration: underline;
+    border: none;
+  }
+
+  h1 {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  ul {
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    min-height: 600px;
+    min-width: 900px;
+    margin: 1rem;
+    position: relative;
+    max-width: 50%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+
+  a,
+  a:visited,
+  a:active {
+    color: #2d3644;
+    text-decoration: none;
+    border-bottom: 1px blue dotted;
+  }
+
+  a:hover {
+    color: #5493ff;
+    text-decoration: underline;
+    border: none;
+  }
+
+  .content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    text-align: left;
+    float: left;
+  }
+
+  /**
+ * atom-dark theme for `prism.js`
+ * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
+ * @author Joe Gibson (@gibsjose)
+ */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #c5c8c6;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+
+    border-radius: 0.3em;
+  }
+
+  :not(pre)>code[class*="language-"],
+  pre[class*="language-"] {
+    background: #1d1f21;
+  }
+
+  /* Inline code */
+  :not(pre)>code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: #7C7C7C;
+  }
+
+  .token.punctuation {
+    color: #c5c8c6;
+  }
+
+  .namespace {
+    opacity: .7;
+  }
+
+  .token.property,
+  .token.keyword,
+  .token.tag {
+    color: #96CBFE;
+  }
+
+  .token.class-name {
+    color: #FFFFB6;
+    text-decoration: underline;
+  }
+
+  .token.boolean,
+  .token.constant {
+    color: #99CC99;
+  }
+
+  .token.symbol,
+  .token.deleted {
+    color: #f92672;
+  }
+
+  .token.number {
+    color: #FF73FD;
+  }
+
+  .token.selector,
+  .token.attr-name,
+  .token.string,
+  .token.char,
+  .token.builtin,
+  .token.inserted {
+    color: #A8FF60;
+  }
+
+  .token.variable {
+    color: #C6C5FE;
+  }
+
+  .token.operator {
+    color: #EDEDED;
+  }
+
+  .token.entity {
+    color: #FFFFB6;
+    /* text-decoration: underline; */
+  }
+
+  .token.url {
+    color: #96CBFE;
+  }
+
+  .language-css .token.string,
+  .style .token.string {
+    color: #87C38A;
+  }
+
+  .token.atrule,
+  .token.attr-value {
+    color: #F9EE98;
+  }
+
+  .token.function {
+    color: #DAD085;
+  }
+
+  .token.regex {
+    color: #E9C062;
+  }
+
+  .token.important {
+    color: #fd971f;
+  }
+
+  .token.important,
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.entity {
+    cursor: help;
+  }
+</style>
+
+<div class="card">
+  <div class="content">
+    <p>Cookie Authentication
+    </p>
+    <br>
+    <p>A step by step description of how cookie based authentication works.
+    </p>
+    <br>
+    <p>Step 1. A user signs up for your website / application.
+    </p>
+    <p>Before anything else, the user has to sign up. The client posts a HTTP
+      request to the server containing his/her username and password.
+    </p>
+    <br>
+    <p>Step 2. Your servers handles the user sign up.
+    </p>
+    <p>The server receives this request and hashes the password before storing
+      the username and password in your database. This way, if someone
+      gains access to your database they won’t see your users’ actual passwords.
+    </p>
+    <p>
+      <pre>
+        <code class="language-python">
+        import bcrypt
+        password = b"super secret password"
+        # Hash a password for the first time, with a randomly-generated salt
+        hashed = bcrypt.hashpw(password, bcrypt.gensalt())
+        # Check that an unhashed password matches one that has previously been
+        # hashed
+        if bcrypt.checkpw(password, hashed):
+          print("It Matches!")
+        else:
+          print("It Does not Match :(")
+      </code>
+      </pre>
+    </p>
+
+    <br>
+    <p>Step 3. User logs in.
+    </p>
+    <p>Now your user logs in. He/she provides their username/password and again,
+      this is posted as a HTTP request to the server.
+    </p>
+    <br>
+    <p>Step 4. The server validates the login.
+    </p>
+    <p>The server looks up the username in the database, hashes the supplied
+      login password, and compares it to the previously hashed password in the
+      database. If it doesn’t check out, we may deny them access by sending a
+      401 status code and ending the request.
+    </p>
+    <br>
+    <p>Step 5. Generating access token.
+    </p>
+    <p>If everything checks out, we’re going to create an access token,
+      which uniquely identifies the user’s session. Still in the server,
+      we do two things with the access token:
+
+      <ol>
+        <li>Store it in the database associated with that user.</li>
+        <li>Attach it to a response cookie to be returned to the client. Be
+          sure to set an expiration date/time to limit the user’s session.
+          Henceforth, the cookies will be attached to every request (and response)
+          made between the client and server.</li>
+      </ol>
+    </p>
+    <br>
+    <p>Step 6. Client makes page requests.
+    </p>
+    <p>Back on the client side, we are now logged in. Every time the client
+      makes a request for a page that requires authorization (i.e. they need
+      to be logged in), the server obtains the access token from the cookie
+      and checks it against the one in the database associated with that user.
+      If it checks out, access is granted.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+</html>

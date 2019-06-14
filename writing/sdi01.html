@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributed Systems Design</title>
+</head>
+<style>
+  body {
+    background: #e2e1e0;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+  }
+
+  a,
+  a:visited,
+  a:active {
+    color: #2d3644;
+    text-decoration: none;
+    border-bottom: 1px blue dotted;
+  }
+
+  a:hover {
+    color: #5493ff;
+    text-decoration: underline;
+    border: none;
+  }
+
+  h1 {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  ul {
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    min-height: 600px;
+    min-width: 900px;
+    margin: 1rem;
+    position: relative;
+    max-width: 50%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+
+  a,
+  a:visited,
+  a:active {
+    color: #2d3644;
+    text-decoration: none;
+    border-bottom: 1px blue dotted;
+  }
+
+  a:hover {
+    color: #5493ff;
+    text-decoration: underline;
+    border: none;
+  }
+
+  .content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    text-align: left;
+    float: left;
+  }
+</style>
+
+<div class="card">
+  <div class="content">
+    <p>Distributed Systems Design - Design a URL shortening service
+    </p>
+    <br>
+    <p>Let's design a URL shortening service like <a href="http://bit.ly">bit.ly</a>
+       or <a href="http://tinyurl.com">tinyurl.com</a>. This service will provide short aliases
+       redirecting to long URLs.
+    </p>
+    <br>
+    <p><i>1.  What is the purpose of shortened URL?</i></p>
+    <p>Shortened URLs save a lot of space when printed, displayed, or messaged.  They're also
+      easier to remember.
+    </p>
+    <br>
+    <p><i>2.  Requirements and goals</i></p>
+    <p>The URL shortening service should meet the following requirements:
+      <ul>
+        <li>Given a URL the service should generate a shorter and unique alias.</li>
+        <li>If a user clicks on a shortended URL the service should redirect them to the original link.</li>
+        <li>Users should be able to customize the shortened URL or the system should generate one on their behalf.</li>
+        <li>Links with no clicks should expire after a certain amount of time.</li>
+        <li>The system will expose a REST API</li>
+      </ul>
+    </p>
+    <p>The system should also satisfy the principals of system design (i.e. availability, performance, reliability, manageability, and cost).
+      There will always be trade-offs depending on the goals of the system but each area should be taken into account.
+    </p>
+    <p>Bonus: The system should produce analytics about URL usage.
+    </p>
+    <br>
+    <p><i>3.  Designing for scale</i></p>
+    <p>If the system is popular we should expect it to be light on writes and heavy on reads.  Let's assume 100:1 ratio between read and write
+    </p>
+    <br>
+
+  </div>
+</div>
+</html>
